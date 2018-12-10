@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>HTML REPORT DEMO</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                data: [{
+                    type: "doughnut",
+                    startAngle: 60,
+                    //innerRadius: 60,
+                    indexLabelFontSize: 17,
+                    indexLabel: "{label} - #percent%",
+                    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                    dataPoints: [
+                        { y: 3, label: "PASS" },
+                        { y: 1, label: "FAIL" },
+                        { y: 7, label: "SKIP" },
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
+
+
+</head>
+<!-- <body><font face='Tahoma'size='2'> -->
+
+<body style="background-color:rgb(177, 174, 174)">
+    <u>
+        <h1 align='center'>
+            <font face='Arial Black'>HTML REPORT DEMO</font>
+        </h1>
+    </u>
+    <table align='center' border='0' width='70%' height='10'>
+        <tr>
+            <td width='70%'></td>
+        </tr>
+        <table align='center' border='1' width='70%' height='47'>
+            <tr>
+                <td style="background-color:rgb(255, 252, 80)" colspan='1' align='center'>
+                    <b>
+                        <font color='#000000' face='Tahoma' size='3'>ScriptName : &nbsp;&nbsp;&nbsp; </font>
+                        <font color='#0000FF' face='Tahoma ' size='3 '> Html Report Tests </font>
+                    </b>
+                </td>
+                <td style="background-color:rgb(255, 252, 80)" colspan='2 ' align='Center '>
+                    <b>
+                        <font color='#000000' face='Tahoma' size='3'>Start Time :&nbsp;</font>
+                    </b>
+                    <font color='#0000FF ' face='Tahoma' size='3'>
+                        <b>04-12-2018 04:24:13 </b>
+                    </font>
+                </td>
+            </tr>
+            <td bgcolor='#CCCCFF' align='center'>
+                <b>
+                    <font color='#000000' face='Tahoma' size='3'>S.No</font>
+                </b>
+            </td>
+            <td bgcolor='#CCCCFF' align='center'>
+                <b>
+                    <font color='#000000' face='Tahoma' size='3'>Screenshot</font>
+                </b>
+            </td>
+            <td bgcolor='#CCCCFF' align='center'>
+                <b>
+                    <font color='#000000' face='Tahoma' size='3'>Response </font>
+                </b>
+            </td>
+            </tr>
+            <tr>
+                <!-- <td bgcolor='#FFFFDC'align='Center'><font color='#000000' face='Tahoma' size='2'>1</font></td> -->
+                <td style="background-color:rgb(245, 245, 245)" align='Center'>1</td>
+                <td style="background-color:rgb(245, 245, 245)" valign='middle' align='center'>
+                    <b>
+                        <font color='#000000' face='Tahoma' size='3'>
+                            <a href="D:\SpringBoot\demoSelenium\screenshot\demoHTML-04-12-2018_04-23-50.png" target="_blank">
+                                Click to view Screenshot </a>
+                        </font>
+                    </b>
+                </td>
+                <td style="background-color:rgb(0, 0, 0)" valign='middle' align='Center'>
+                    <font color='#1a9807' face='Impact' size='5'>Pass</font>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- <td bgcolor='#FFFFDC'align='Center'><font color='#000000' face='Tahoma' size='2'>1</font></td> -->
+                <td style="background-color:rgb(245, 245, 245)" align='Center'>2</td>
+                <td style="background-color:rgb(245, 245, 245)" valign='middle' align='center'>
+                    <b>
+                        <font color='#000000' face='Tahoma' size='3'>
+                            <a href="D:\SpringBoot\demoSelenium\screenshot\demoHTML-04-12-2018_04-23-50.png" target="_blank">
+                                Click to view Screenshot </a>
+                        </font>
+                    </b>
+                </td>
+                <td style="background-color:rgb(0, 0, 0)" valign='middle' align='Center'>
+                    <font color='#f00' face='Impact' size='5'>Fail</font>
+                </td>
+            </tr>
+
+            <tr>
+                <!-- <td bgcolor='#FFFFDC'align='Center'><font color='#000000' face='Tahoma' size='2'>1</font></td> -->
+                <td style="background-color:rgb(245, 245, 245)" align='Center'>3</td>
+                <td style="background-color:rgb(245, 245, 245)" valign='middle' align='center'>
+                    <b>
+                        <font color='#000000' face='Tahoma' size='3'>
+                            <a href="D:\SpringBoot\demoSelenium\screenshot\demoHTML-04-12-2018_04-23-50.png" target="_blank">
+                                Click to view Screenshot </a>
+                        </font>
+                    </b>
+                </td>
+                <td style="background-color:rgb(0, 0, 0)" valign='middle' align='Center'>
+                    <font color='#00f' face='Impact' size='5'>Skip</font>
+                </td>
+            </tr>
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+            <a href="C:\Users\M1049015\Desktop\htmlrepo2.html">back</a>
+
+
+
+
+</body>
+<footer>
+    <div class="container">
+        <h2>Progress of the testCases</h2>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" style="width:33.33%">
+                Pass
+            </div>
+            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:33.33%">
+                Fail
+            </div>
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:33.33%">
+                Skip
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+
+</html>
+<!-- D:\SpringBoot\demoSelenium\screenshot\demoHTML-04-12-2018_04-23-50.png -->
